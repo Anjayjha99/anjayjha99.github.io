@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+#Project{
+    position: relative;
+    /* min-height: 100vh;
+    max-height: 130vh; */
+    height: 600px;
+    background: #262928;
+    width: 100%;
+}
+#Project .heading h1{
+    position: absolute;
+    transform: translate(0%,70%);
+    font-size: 5rem;
+}
+#Project .heading h1:nth-child(1){
+    color: transparent;
+    /* 03a9f4 */
+    -webkit-text-stroke: 2px #80e2e5;
+}
+#Project .heading h1:nth-child(2){
+    color: #80e2e5;
+    animation: animate 4s ease-in-out infinite;
+}
+#Project .project-container{
+    position: absolute;
+    top: 235px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
+#Project .project-container .project1{
+    margin-right: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(../Photos/Projectbg1.jpg) no-repeat center center;
+    background-size: cover;
+}
+#Project .project-container .project2{
+    margin-right: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(../Photos/Projectbg2.jpg) no-repeat center center;
+    background-size: cover;
+}
+#Project .project-container .pinfo{
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+#Project .project-container .project1 .pinfo h2,
+#Project .project-container .project2 .pinfo h2{
+    color: #000;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    left: 60px;
+    font-size: 1.3rem;
+    transition: 0.5s; 
+    opacity: 0; 
+}
+#Project .project-container .project1 .pinfo h3{
+    font-size: 1.32rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    transition: 0.5s;
+}
+#Project .project-container .project2 .pinfo h3{
+    font-size: 1.32rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    transition: 0.5s;
+}
+#Project .project-container .project1 .pinfo a,
+#Project .project-container .project2 .pinfo a{
+    position: absolute;
+    top: 225px;
+    left: 120px;
+    outline: none;
+    opacity: 0;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2894ff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #000;
+    border-radius: 0.75rem;
+    padding: 8px 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+#Project .project-container .project1:hover .pinfo h2,
+#Project .project-container .project2:hover .pinfo h2{
+    top: 48px;
+    opacity: 1;
+}
+#Project .project-container .project1:hover .pinfo h3,
+#Project .project-container .project2:hover .pinfo h3{
+    top: 45px;
+    opacity: 0;
+}
+#Project .project-container .project1:hover .pinfo a,
+#Project .project-container .project2:hover .pinfo a{
+    top: 180px;
+    opacity: 1;
+}
+#Project .project-container .project1 .pinfo a:hover,
+#Project .project-container .project2 .pinfo a:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+#Project .project-container .project1:hover .pinfo{
+    background: #2894ff;
+    opacity: 0.9;
+}
+#Project .project-container .project2:hover .pinfo{
+    background: #18c712;
+    opacity: 0.9;
+}
+
+@media screen and (max-width:870px) {
+    #Project .project-container .project1{
+        margin-right: 20px;
+        width: 350px;
+    }
+    #Project .heading h1{
+        font-size: 4.5rem;
+    }
+    #Project .project-container .project2{
+        margin-right: 20px;
+        width: 350px;
+    }
+    #Project .project-container .project1 .pinfo h2{
+        left: 30px; 
+    }
+    #Project .project-container .project2 .pinfo h2{
+        left: 40px;
+    }
+    #Project .project-container .project1 .pinfo h3{
+        left: 75px;
+    }
+    #Project .project-container .project2 .pinfo h3{
+        top: 100px;
+        left: 30px;
+    }
+    #Project .project-container .project1 .pinfo a,
+    #Project .project-container .project2 .pinfo a{
+        left: 95px;
+    }
+}
+@media screen and (max-width:740px) {
+    #Project{
+        height: 900px;
+    }
+    #Project .heading h1{
+        font-size: 4rem;
+    }
+    #Project .project-container{
+        top: 180px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #Project{
+        height: 780px;
+    }
+    #Project .project-container{
+        top: 150px;
+    }
+    #Project .project-container .project1{
+        margin-right: 0px;
+        margin-bottom: 30px;
+        width: 300px;
+        height: 250px;
+    }
+    #Project .heading h1{
+        font-size: 3.5rem;
+    }
+    #Project .project-container .project2{
+        margin-bottom: 30px;
+        margin-right: 0px;
+        height: 250px;
+        width: 300px;
+    }
+    #Project .project-container .project1 .pinfo h2{
+        font-size: 1.1rem;
+        left: 30px; 
+    }
+    #Project .project-container .project2 .pinfo h2{
+        font-size: 1.1rem;
+        left: 40px;
+    }
+    #Project .project-container .project1 .pinfo h3{
+        font-size: 1.1rem;
+        top: 100px;
+        left: 68px;
+    }
+    #Project .project-container .project2 .pinfo h3{
+        font-size: 1.1rem;
+        top: 100px;
+        left: 30px;
+    }
+    #Project .project-container .project1 .pinfo a,
+    #Project .project-container .project2 .pinfo a{
+        font-size: 1rem;
+        left: 80px;
+        padding: 6px 8px;
+        top: 200px;
+    }
+    #Project .project-container .project1:hover .pinfo a,
+    #Project .project-container .project2:hover .pinfo a{
+        top: 150px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #Project{
+        height: 700px;
+    }
+
+    #Project .project-container .project1{
+        width: 270px;
+        height: 220px;
+    }
+    #Project .heading h1{
+        font-size: 3rem;
+    }
+    #Project .project-container .project2{
+        height: 220px;
+        width: 270px;
+    }
+    #Project .project-container .project1 .pinfo h2{
+        font-size: 1rem;
+        left: 30px; 
+    }
+    #Project .project-container .project2 .pinfo h2{
+        font-size: 1rem;
+        left: 40px;
+    }
+    #Project .project-container .project1 .pinfo h3{
+        font-size: 1rem;
+        top: 80px;
+        left: 60px;
+    }
+    #Project .project-container .project2 .pinfo h3{
+        font-size: 1rem;
+        top: 80px;
+        left: 30px;
+    }
+    #Project .project-container .project1 .pinfo a,
+    #Project .project-container .project2 .pinfo a{
+        font-size: 0.9rem;
+        left: 80px;
+        padding: 4px 6px;
+        top: 200px;
+    }
+    #Project .project-container .project1:hover .pinfo a,
+    #Project .project-container .project2:hover .pinfo a{
+        top: 150px;
+    }
+}
