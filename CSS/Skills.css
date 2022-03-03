@@ -7,6 +7,7 @@
     position: relative;
 }
 #Skill{
+    overflow: hidden;
     margin-top: 160px;
     position:relative;
     width: 100%;

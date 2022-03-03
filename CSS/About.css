@@ -7,6 +7,7 @@
     position: relative;
 }
 .About{
+    overflow: hidden;
     position:relative;
     width: 100%;
     background: #16384c;

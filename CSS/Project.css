@@ -9,8 +9,6 @@
 }
 #Project{
     position: relative;
-    /* min-height: 100vh;
-    max-height: 130vh; */
     height: 600px;
     background: #262928;
     width: 100%;
