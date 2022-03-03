@@ -7,8 +7,9 @@
     position: relative;
 }
 #Skill{
-    overflow: hidden;
-    margin-top: 160px;
+    /* overflow: hidden; */
+    margin-top: 100px;
+    height: 700px;
     position:relative;
     width: 100%;
 }
@@ -16,7 +17,6 @@
     position: absolute;
     transform: translate(0%,-10%);
     font-size: 5rem;
-    margin-bottom: 120px;
 }
 .heading h1:nth-child(1){
     color: transparent;
@@ -34,7 +34,7 @@
     position: relative;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    margin-bottom: 50px;
+    margin-top: 100px;
 }
 .skill .box{
     display: flex;
@@ -83,12 +83,26 @@
     transform: translate3d(-50%,-50%,80px);
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:840px) {
+    #Skill{
+        margin-top: 70px;
+        height: 880px;
+    }
+    .skill{
+        margin-top: 70px;
+    }
     #Skill .heading h1{
         font-size: 4.5rem;
     }
 }
 @media screen and (max-width:650px) {
+    #Skill{
+        margin-top: 70px;
+        height: 800px;
+    }
+    .skill{
+        margin-top: 70px;
+    }
     #Skill .heading h1{
         font-size: 4rem;
     }
@@ -112,7 +126,11 @@
 
 @media screen and (max-width:550px) {
     #Skill{
-        margin-top: 100px;
+        margin-top: 50px;
+        height: 650px;
+    }
+    .skill{
+        margin-top: 50px;
     }
     #Skill .heading h1{
         font-size: 3.5rem;
@@ -136,6 +154,13 @@
     }
 }
 @media screen and (max-width:420px) {
+    #Skill{
+        margin-top: 50px;
+        height: 600px;
+    }
+    .skill{
+        margin-top: 50px;
+    }
     #Skill .heading h1{
         font-size: 3rem;
     }
@@ -147,5 +172,11 @@
     }
     .skill .box .name{
         font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:360px) {
+    #Skill{
+        margin-top: 40px;
+        height: 750px;
     }
 }
