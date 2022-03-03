@@ -126,11 +126,11 @@
 
 @media screen and (max-width:550px) {
     #Skill{
-        margin-top: 50px;
+        margin-top: 80px;
         height: 650px;
     }
     .skill{
-        margin-top: 50px;
+        margin-top: 70px;
     }
     #Skill .heading h1{
         font-size: 3.5rem;
@@ -155,7 +155,7 @@
 }
 @media screen and (max-width:420px) {
     #Skill{
-        margin-top: 50px;
+        margin-top: 70px;
         height: 600px;
     }
     .skill{
@@ -174,7 +174,7 @@
         font-size: 1.2rem;
     }
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:353px) {
     #Skill{
         margin-top: 40px;
         height: 750px;
